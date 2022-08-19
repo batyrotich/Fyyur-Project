@@ -15,7 +15,7 @@ from forms import *
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
-
+app.config['SQLALCHEMY_DATABASE_URI']= 'postresql://eddah:eddah@localhost:5432/fyyur'
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
